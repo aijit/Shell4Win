@@ -3,8 +3,6 @@
 ::     HKEY_LOCAL_MACHINE\Software\Microsoft\Command Processor
 ::     AutoRun=dir/to/alias.bat
 @doskey alias=doskey /macros
-@doskey ls=ls --color=auto $*
 @doskey ll=ls -l --color=auto $*
-@doskey grep=grep --color=always $*
 @doskey awk=gawk $*
 @doskey which=where $*

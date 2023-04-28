@@ -6,6 +6,8 @@ This is a collection of some usefull GNU/Linux shell tools for Microsoft Windows
 
 <https://u-tools.com/msls>
 
+LS_OPTIONS=-bhC --color=auto
+
 ### cat
 
 <https://github.com/TwiN/cat-for-windows>
@@ -13,6 +15,8 @@ This is a collection of some usefull GNU/Linux shell tools for Microsoft Windows
 ### grep
 
 <https://gnuwin32.sourceforge.net/packages/grep.htm>
+
+GREP_OPTIONS=--color=always
 
 ### sed
 
