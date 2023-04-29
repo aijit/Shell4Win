@@ -4,7 +4,7 @@ This is a collection of some usefull GNU/Linux shell tools for Microsoft Windows
 
 ### 配置说明
 
-双击执行 [config.bat](config.bat) 可自动完成以下配置步骤：
+双击执行 [config.bat](config.bat) 可自动完成以下配置步骤(重复双击运行不影响最终效果)：
 
 * 在注册表 `HKEY_LOCAL_MACHINE\Software\Microsoft\Command Processor` 下，添加
   
@@ -17,6 +17,12 @@ This is a collection of some usefull GNU/Linux shell tools for Microsoft Windows
 * 将所有可执行文件路径，添加到用户 PATH 环境变量
 
     `%SHELL4WIN%/bin; %SHELL4WIN%/gawk; %SHELL4WIN%/grep; %SHELL4WIN%/msls; ...`
+
+* 添加工具推荐环境变量
+
+    `LS_OPTIONS=-bhC --color=auto`
+
+    `GREP_OPTIONS=--color=always`
 
 ### ls
 
