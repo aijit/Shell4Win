@@ -16,15 +16,11 @@ This is a collection of some usefull GNU/Linux shell tools for Microsoft Windows
 
 * 将所有可执行文件路径，添加到用户 PATH 环境变量
 
-    `%SHELL4WIN%/bin; %SHELL4WIN%/gawk; %SHELL4WIN%/grep; %SHELL4WIN%/msls; ...`
+    `%SHELL4WIN%/bin; %SHELL4WIN%/gawk; %SHELL4WIN%/grep; %SHELL4WIN%/coreutils; ...`
 
 * 添加工具推荐环境变量
 
     `GREP_OPTIONS=--color=always`
-
-### ls
-
-LS_OPTIONS=-bhC --color=auto
 
 ### grep
 
@@ -51,12 +47,6 @@ GREP_OPTIONS=--color=always
 - find
 - locate
 - xargs
-
-### echo
-
-### print
-
-### date
 
 ### [GNU/coreutils](coreutils/README.md)
 
