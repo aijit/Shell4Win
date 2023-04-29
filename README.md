@@ -58,12 +58,16 @@ GREP_OPTIONS=--color=always
 
 <https://gnuwin32.sourceforge.net/packages/stat.htm>
 
-### find
+### findutils
+
+<https://gnuwin32.sourceforge.net/packages/findutils.htm>
+
+- find
+- locate
+- xargs
 
 ### echo
 
 ### print
 
 ### date
-
-### xargs
