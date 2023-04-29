@@ -20,19 +20,7 @@ This is a collection of some usefull GNU/Linux shell tools for Microsoft Windows
 
 * 添加工具推荐环境变量
 
-    `LS_OPTIONS=-bhC --color=auto`
-
     `GREP_OPTIONS=--color=always`
-
-### ls
-
-<https://u-tools.com/msls>
-
-LS_OPTIONS=-bhC --color=auto
-
-### cat
-
-<https://github.com/TwiN/cat-for-windows>
 
 ### grep
 
@@ -48,17 +36,9 @@ GREP_OPTIONS=--color=always
 
 <https://github.com/mbuilov/gawk-windows>
 
-### touch
-
-<https://sourceforge.net/projects/touchforwindows>
-
 ### [GNU/file](file/README.md)
 
 <https://gnuwin32.sourceforge.net/packages/file.htm>
-
-### [GNU/stat](stat/README.md)
-
-<https://gnuwin32.sourceforge.net/packages/stat.htm>
 
 ### [GNU/findutils](findutils/README.md)
 

@@ -3,7 +3,8 @@
 ::     AutoRun=dir/to/alias.bat
 :: cmd.exe will auto run this script first, when open a new terminal
 @doskey alias=doskey /macros
-@doskey ll=ls -l --color=auto $*
+@doskey ls=ls --color=auto $*
+@doskey ll=ls --color=auto -l $*
 @doskey awk=gawk $*
 @doskey which=where $*
 @doskey file=file -m %SHELL4WIN%file\share\misc\magic $*
