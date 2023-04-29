@@ -22,6 +22,10 @@ This is a collection of some usefull GNU/Linux shell tools for Microsoft Windows
 
     `GREP_OPTIONS=--color=always`
 
+### ls
+
+LS_OPTIONS=-bhC --color=auto
+
 ### grep
 
 <https://gnuwin32.sourceforge.net/packages/grep.htm>
