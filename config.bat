@@ -1,5 +1,6 @@
 :: use Administrator to run this script
 @echo off
+setlocal enabledelayedexpansion
 set cwd=%~dp0
 
 :: 1. Add alias.bat to windows registry table
@@ -10,34 +11,46 @@ reg add %regTbl% /t REG_SZ /v %regKey% /d %regValue% /f
 
 :: 2. Add user env variable %SHELL4WIN%
 set envName=SHELL4WIN
-for /F %%i in ('whoami') do ( set who=%%i)
-set usrName=%who:\=\\%
+set usrName=%USERDOMAIN%\\%USERNAME%
 echo.
 echo set env variable for %usrName%
 echo.
+echo "SHELL4WIN:%SHELL4WIN%"
 if "%SHELL4WIN%" == "" (
     wmic ENVIRONMENT create name="%envName%", username="%usrName%", VariableValue="%cwd%"
 ) else (
     wmic ENVIRONMENT where "name='%envName%' and username='%usrName%'" set VariableValue="%cwd%"
 )
 echo.
-echo set SHELL4WIN=%SHELL4WIN%
+echo set SHELL4WIN=%cwd%
 echo.
 
 :: 3. Add bin paths to user env %PATH%
-set BINS=%%SHELL4WIN%%bin;%%SHELL4WIN%%gawk;%%SHELL4WIN%%grep;%%SHELL4WIN%%msls
-for /f "tokens=2 delims==" %%a in ('wmic ENVIRONMENT where "UserName='%usrName%' and name='PATH'" get VariableValue /value') do set "usrPath=%%a"
-if "%usrPath%" == "" (
-    wmic ENVIRONMENT create name="PATH", username="%usrName%", VariableValue="%BINS%"
-) else (
-    wmic ENVIRONMENT where "name='PATH' and username='%usrName%'" set VariableValue="%usrPath%;%BINS%"
+for /f "tokens=2 delims==" %%a in (
+    'wmic ENVIRONMENT where "UserName='%usrName%' and name='PATH'" get VariableValue /value'
+) do set usrPath=%%a
+set usrPath=%usrPath%
+if "!usrPath!" == "" (
+    wmic ENVIRONMENT create name="PATH", username="%usrName%", VariableValue=""
 )
+echo PATH(before)=!usrPath!
 echo.
-echo set PATH=%usrPath%;%BINS%
+set parent=%cwd:~-10%
+for /d %%f in (*) do (
+    echo %%f | findstr /b "\." > nul || (
+        echo !usrPath! | findstr "!parent!%%f" > nul || (
+            set usrPath=!usrPath!%%SHELL4WIN%%%%f;
+            echo PATH append %%SHELL4WIN%%%%f;
+        )
+    )
+)
+wmic ENVIRONMENT where "name='PATH' and username='%usrName%'" set VariableValue="!usrPath!"
+echo.
+echo PATH(after)=!usrPath!
 echo.
 
 :: Restart explorer to make it work
-::taskkill /im explorer.exe /f
-::start explorer.exe
+taskkill /im explorer.exe /f
+start explorer.exe
 echo on
 pause
