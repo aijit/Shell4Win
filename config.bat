@@ -10,16 +10,14 @@ set regValue="%cwd%alias.bat"
 reg add %regTbl% /t REG_SZ /v %regKey% /d %regValue% /f
 
 :: 2. Add user env variable %SHELL4WIN%
-set envName=SHELL4WIN
 set usrName=%USERDOMAIN%\\%USERNAME%
 echo.
 echo set env variable for %usrName%
 echo.
-echo "SHELL4WIN:%SHELL4WIN%"
-if "%SHELL4WIN%" == "" (
-    wmic ENVIRONMENT create name="%envName%", username="%usrName%", VariableValue="%cwd%"
-) else (
+set envName=SHELL4WIN
+wmic ENVIRONMENT create name="%envName%", username="%usrName%", VariableValue="%cwd%" > nul 2>&1 || (
     wmic ENVIRONMENT where "name='%envName%' and username='%usrName%'" set VariableValue="%cwd%"
+    echo %envName% already set.
 )
 echo.
 echo set SHELL4WIN=%cwd%
