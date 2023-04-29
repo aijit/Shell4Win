@@ -56,6 +56,8 @@ GREP_OPTIONS=--color=always
 
 ### stat
 
+<https://gnuwin32.sourceforge.net/packages/stat.htm>
+
 ### find
 
 ### echo
