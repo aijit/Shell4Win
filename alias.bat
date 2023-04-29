@@ -6,3 +6,4 @@
 @doskey ll=ls -l --color=auto $*
 @doskey awk=gawk $*
 @doskey which=where $*
+@doskey file=file -m %SHELL4WIN%file\share\misc\magic $*

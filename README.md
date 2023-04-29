@@ -52,6 +52,8 @@ GREP_OPTIONS=--color=always
 
 ### file
 
+<https://gnuwin32.sourceforge.net/packages/file.htm>
+
 ### stat
 
 ### find
