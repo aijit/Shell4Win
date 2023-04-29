@@ -9,3 +9,4 @@
 @doskey which=where $*
 @doskey file=file -m %SHELL4WIN%file\share\misc\magic $*
 @doskey find=%SHELL4WIN%findutils\find $*
+@doskey date=%SHELL4WIN%coreutils\date $*
