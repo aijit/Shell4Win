@@ -4,11 +4,9 @@ This is a collection of some usefull GNU/Linux shell tools for Microsoft Windows
 
 ### 配置说明
 
-双击执行 [config.bat](config.bat) 可自动完成以下配置步骤(重复双击运行不影响最终效果)：
+双击运行 bat 脚本，自动完成以下配置步骤(重复双击运行不影响最终效果)：
 
-* 在注册表 `HKEY_LOCAL_MACHINE\Software\Microsoft\Command Processor` 下，添加
-  
-  `AutoRun`=[dir/to/alias.bat](alias.bat)
+**[config.bat](config.bat)**
 
 * 添加用户环境变量 `SHELL4WIN`，值为 shell4win 目录的绝对路径
 
@@ -23,6 +21,14 @@ This is a collection of some usefull GNU/Linux shell tools for Microsoft Windows
     `LS_OPTIONS=-bhC --color=auto`
 
     `GREP_OPTIONS=--color=always`
+
+**[config.reg.bat](config.reg.bat)**
+
+* 在注册表 `HKEY_LOCAL_MACHINE\Software\Microsoft\Command Processor` 下，添加
+
+  `AutoRun`=[dir/to/alias.bat](alias.bat)
+
+* 创建 gawk.exe 软链文件 awk.exe
 
 ### ls
 
