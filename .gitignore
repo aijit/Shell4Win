@@ -1,3 +1,6 @@
 # IDE folder
 .idea
 .vscode
+
+# Symlink
+awk.exe
