@@ -36,6 +36,10 @@ GREP_OPTIONS=--color=always
 
 <https://github.com/mbuilov/gawk-windows>
 
+### mandoc
+
+<https://embedeo.org/ws/doc/man_windows/>
+
 ### [GNU/file](file/README.md)
 
 <https://gnuwin32.sourceforge.net/packages/file.htm>
