@@ -20,13 +20,17 @@ This is a collection of some usefull GNU/Linux shell tools for Microsoft Windows
 
 * 添加工具推荐环境变量
 
+    `LS_OPTIONS=-bhC --color=auto`
+
     `GREP_OPTIONS=--color=always`
+
+### ls
+
+<https://u-tools.com/msls>
 
 ### grep
 
 <https://gnuwin32.sourceforge.net/packages/grep.htm>
-
-GREP_OPTIONS=--color=always
 
 ### sed
 
