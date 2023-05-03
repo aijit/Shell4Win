@@ -1,5 +1,4 @@
-Shell4Win
-=========
+## Shell4Win
 
 A collection of some usefull GNU/Linux shell tools for Microsoft Windows.
 
@@ -16,7 +15,7 @@ A collection of some usefull GNU/Linux shell tools for Microsoft Windows.
 
 * 将所有可执行文件路径，添加到用户 PATH 环境变量
 
-    `%SHELL4WIN%/bin; %SHELL4WIN%/gawk; %SHELL4WIN%/grep; %SHELL4WIN%/coreutils; ...`
+    `%SHELL4WIN%/bin; %SHELL4WIN%/awk; %SHELL4WIN%/grep; %SHELL4WIN%/coreutils; ...`
 
 * 添加工具推荐环境变量
 
@@ -29,8 +28,6 @@ A collection of some usefull GNU/Linux shell tools for Microsoft Windows.
 * 在注册表 `HKEY_LOCAL_MACHINE\Software\Microsoft\Command Processor` 下，添加
 
   `AutoRun`=[dir/to/alias.bat](alias.bat)
-
-* 创建 gawk.exe 软链文件 awk.exe
 
 
 ### 命令列表
