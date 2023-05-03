@@ -1,6 +1,8 @@
-## Shell4Win
+Shell4Win
+=========
 
 A collection of some usefull GNU/Linux shell tools for Microsoft Windows.
+
 
 ### 配置说明
 
@@ -30,9 +32,8 @@ A collection of some usefull GNU/Linux shell tools for Microsoft Windows.
 
 * 创建 gawk.exe 软链文件 awk.exe
 
-### 命令列表
 
---------------------
+### 命令列表
 
 **General**
 : [ls](https://u-tools.com/msls)
@@ -43,14 +44,12 @@ A collection of some usefull GNU/Linux shell tools for Microsoft Windows.
 | [mandoc](https://embedeo.org/ws/doc/man_windows/)
 | [unrar](https://www.rarlab.com/rar_add.htm)
 
---------------------
 
 [GNU/findutils](https://gnuwin32.sourceforge.net/packages/findutils.htm)
 : find
 | locate
 | xargs
 
---------------------
 
 **[GNU/coreutils](https://gnuwin32.sourceforge.net/packages/coreutils.htm)**
 
