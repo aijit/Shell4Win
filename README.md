@@ -179,3 +179,17 @@ A collection of some usefull GNU/Linux shell tools for Microsoft Windows.
 | vi
 | wget
 | which
+
+* win-bash 对 windows 原生特性有较好的支持：
+
+  - 继承了 windows 环境变量
+
+  - 可调用 windows 现有 EXE 程序
+
+  - 使用以磁盘符开头的 windows 绝对路径格式
+
+* win-bash 有以下缺陷：
+
+  - [交互命令中，不支持非 ASCII 字符，如中文、德语](https://sourceforge.net/p/win-bash/discussion/324507/thread/4f27bf1f/#4d00)
+
+  - [不支持自动补全](https://sourceforge.net/p/win-bash/discussion/324507/thread/cd0d5873/#933b)
