@@ -1,0 +1,1 @@
+@%SHELL4WIN%file\file -m %SHELL4WIN%file\share\misc\magic %*

@@ -1,0 +1,1 @@
+@%SHELL4WIN%win-bash\which %1.exe 2>nul
