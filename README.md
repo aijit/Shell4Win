@@ -191,5 +191,7 @@ A collection of some usefull GNU/Linux shell tools for Microsoft Windows.
 * win-bash 有以下缺陷：
 
   - [交互命令中，不支持非 ASCII 字符，如中文、德语](https://sourceforge.net/p/win-bash/discussion/324507/thread/4f27bf1f/#4d00)
+  
+    通过 [fd](bin/fd.sh) 命令解决不能 cd 中文目录的问题
 
   - [不支持自动补全](https://sourceforge.net/p/win-bash/discussion/324507/thread/cd0d5873/#933b)

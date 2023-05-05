@@ -5,3 +5,5 @@ alias whoami=${SHELL4WIN}coreutils/whoami
 
 export PS1="[$(whoami)@$(hostname) \w]\$ "
 export HOME=$USERPROFILE
+
+. ${SHELL4WIN}bin/fd.sh
