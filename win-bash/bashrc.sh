@@ -10,3 +10,4 @@ export HOME=$USERPROFILE
 . ${SHELL4WIN}bin/fd.sh
 
 cd $CURRENT_DIR
+unset CURRENT_DIR

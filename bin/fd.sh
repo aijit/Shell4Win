@@ -3,6 +3,7 @@ dumpdir()
     local dir=$1
     find $dir/* -type d -prune 2>/dev/null | sed 's/^\.\///'
 }
+alias dl=dumpdir
 fd()
 {
     local data_dir=${SHELL4WIN}.data
