@@ -27,8 +27,9 @@ A collection of some usefull GNU/Linux shell tools for Microsoft Windows.
 
 * 在注册表 `HKEY_LOCAL_MACHINE\Software\Microsoft\Command Processor` 下，添加
 
-  `AutoRun`=[dir/to/alias.bat](alias.bat)
+  `AutoRun`=[%SHELL4WIN%alias.bat](alias.bat)
 
+* 添加右键快捷菜单 [Terminal Here](bin/TerminalHere.bat)
 
 ### 命令列表
 
