@@ -185,7 +185,7 @@ A collection of some usefull GNU/Linux shell tools for Microsoft Windows.
 
   - 继承了 windows 环境变量
 
-  - 可调用 windows 现有 EXE 程序
+  - 可调用 windows 现有 `.exe` `.bat` 程序
 
   - 使用以磁盘符开头的 windows 绝对路径格式
 
@@ -196,3 +196,7 @@ A collection of some usefull GNU/Linux shell tools for Microsoft Windows.
     通过 [fd](bin/fd.sh) 命令解决不能 cd 中文目录的问题
 
   - [不支持自动补全](https://sourceforge.net/p/win-bash/discussion/324507/thread/cd0d5873/#933b)
+
+  - 不支持 c-style 的 for 循环
+  
+  - 不支持复杂数组索引，如 `${array[1]}` `${!i}` 等
