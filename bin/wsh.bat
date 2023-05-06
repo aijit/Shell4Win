@@ -3,7 +3,7 @@ setlocal enabledelayedexpansion
 
 SET SHELLDIR=%SHELL4WIN:\=/%win-bash
 SET SHELL=%SHELLDIR%/bash.exe
-SET BASH_ENV=%SHELLDIR%/bashrc.sh
+SET BASH_ENV=%SHELL4WIN:\=/%bashrc
 SET BASH=%SHELL%
 
 :: PATH = usrPATH + sysPATH
@@ -19,6 +19,7 @@ for /f "delims=" %%a in ('echo "%sysPath%"') do set sysPath=%%a
 
 SET PATH=!usrPath! !sysPath!
 SET PATH=!PATH:~1,-1!
+SET PATH=!PATH:\=/!
 
 set cwd=%cd%
 if not "%USERPROFILE%" == "%cwd%" (
@@ -26,5 +27,5 @@ if not "%USERPROFILE%" == "%cwd%" (
 )
 
 "%BASH%" ^
-    -rcfile %SHELLDIR%/bashrc.sh ^
+    -rcfile %BASH_ENV% ^
     %*
