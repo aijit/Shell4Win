@@ -7,5 +7,5 @@ export HOME=$USERPROFILE
 
 . ${SHELL4WIN}bin/fd.sh
 
-cd $CURRENT_DIR
+[ -z "$CURRENT_DIR" ] && cd || cd  "$CURRENT_DIR"
 unset CURRENT_DIR
