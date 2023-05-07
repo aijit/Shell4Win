@@ -18,7 +18,7 @@ for /f "tokens=2 delims==" %%a in (
 for /f "delims=" %%a in ('echo "%sysPath%"') do set sysPath=%%a
 
 SET PATH=!usrPath! !sysPath!
-SET PATH=!PATH:~1,-1!
+SET PATH=!PATH:"=!
 SET PATH=!PATH:\=/!
 
 set cwd=%cd%
