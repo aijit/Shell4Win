@@ -200,3 +200,8 @@ A collection of some usefull GNU/Linux shell tools for Microsoft Windows.
   - 不支持 c-style 的 for 循环
   
   - 不支持复杂数组索引，如 `${array[1]}` `${!i}` 等
+
+
+### 兼容程序
+
+* [`vim` in gvim_9.*_x64.zip](https://github.com/vim/vim-win32-installer/releases)
