@@ -213,4 +213,5 @@ A collection of some usefull GNU/Linux shell tools for Microsoft Windows.
 
 ### 兼容程序
 
-* [`vim` in gvim_9.*_x64.zip](https://github.com/vim/vim-win32-installer/releases)
+[`vim`](https://github.com/vim/vim-win32-installer/releases)
+| [`openssh`](https://github.com/PowerShell/Win32-OpenSSH/releases)
