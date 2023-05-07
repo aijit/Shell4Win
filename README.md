@@ -37,8 +37,10 @@ A collection of some usefull GNU/Linux shell tools for Microsoft Windows.
 
 `lscolors.bat <scheme_file>`
 
-[配色方案文件](msls/scheme)：
-[solarized](https://github.com/seebi/dircolors-solarized)
+[配色方案](msls/scheme)：
+[Solarized](https://ethanschoonover.com/solarized/)
+[dircolors](https://github.com/seebi/dircolors-solarized)
+| [Monokai Pro for vscode](https://monokai.pro/)
 
 ### 命令列表
 
