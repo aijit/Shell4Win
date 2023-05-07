@@ -174,7 +174,6 @@ A collection of some usefull GNU/Linux shell tools for Microsoft Windows.
 | make
 | mvdir
 | paste
-| patch
 | recode
 | rman
 | sdiff
@@ -186,7 +185,6 @@ A collection of some usefull GNU/Linux shell tools for Microsoft Windows.
 | unshar
 | uudecode
 | uuencode
-| vi
 | wget
 | which
 

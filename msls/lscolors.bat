@@ -4,8 +4,8 @@
 :: Usage: lscolors.bat <scheme_file>
 @echo off
 setlocal enabledelayedexpansion
-set scheme=%1
-for /f "delims=" %%a in ('dircolors.exe -d %scheme%') do (
+if "" == "%1" (set scheme=%SHELL4WIN%msls\scheme\default) else (set scheme=%1)
+for /f "delims=" %%a in ('dircolors.exe -d !scheme!') do (
     set /a ln+=1
     if !ln! == 5 %%a
 )
