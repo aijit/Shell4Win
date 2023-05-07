@@ -5,7 +5,7 @@ A collection of some usefull GNU/Linux shell tools for Microsoft Windows.
 
 ### 配置说明
 
-双击运行 bat 脚本，自动完成以下配置步骤(重复双击运行不影响最终效果)：
+双击运行 bat 脚本，以完成相应配置步骤(重复双击运行不影响最终效果)：
 
 **[config.bat](config.bat)**
 
@@ -31,10 +31,20 @@ A collection of some usefull GNU/Linux shell tools for Microsoft Windows.
 
 * 添加右键快捷菜单 [Terminal Here](bin/TerminalHere.bat)
 
+**[lscolors.bat](msls/lscolors.bat)**
+
+在 dos 环境下执行以下命令，将 dircolors 配色文件中的内容，写入用户环境变量 `LS_COLORS` 中，从而改变 ls 命令输出配色。
+
+`lscolors.bat <scheme_file>`
+
+[配色方案文件](msls/scheme)：
+[solarized](https://github.com/seebi/dircolors-solarized)
+
 ### 命令列表
 
 **General**
 : [ls](https://u-tools.com/msls)
+| dircolors
 | [grep](https://gnuwin32.sourceforge.net/packages/grep.htm)
 | [sed](https://github.com/mbuilov/sed-windows)
 | [awk](https://github.com/mbuilov/gawk-windows)
@@ -59,7 +69,6 @@ A collection of some usefull GNU/Linux shell tools for Microsoft Windows.
 | dd
 | df
 | dir
-| dircolors
 | du
 | install
 | ln
