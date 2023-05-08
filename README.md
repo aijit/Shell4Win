@@ -5,6 +5,8 @@ A collection of some usefull GNU/Linux shell tools for Microsoft Windows.
 
 ### 配置说明
 
+为使 dos 窗口支持中文，需要在控制面板中设置 【时钟和区域】-【管理】-【更改系统区域设置】- 勾选【Beta: 使用 Unicode UTF-8 提供全球语言支持】。
+
 双击运行 bat 脚本，以完成相应配置步骤(重复双击运行不影响最终效果)：
 
 **[config.bat](config.bat)**
