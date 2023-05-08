@@ -47,7 +47,7 @@ A collection of some usefull GNU/Linux shell tools for Microsoft Windows.
 **General**
 : [ls](https://u-tools.com/msls)
 | dircolors
-| [grep](https://gnuwin32.sourceforge.net/packages/grep.htm)
+| [grep](https://github.com/mbuilov/grep-windows)
 | [sed](https://github.com/mbuilov/sed-windows)
 | [awk](https://github.com/mbuilov/gawk-windows)
 | [file](https://gnuwin32.sourceforge.net/packages/file.htm)

@@ -1,53 +1,34 @@
-Grep-2.5.4 for Windows
-==========================
+# [grep-windows](https://github.com/mbuilov/grep-windows)
+Instructions for building [Gnu Grep](https://www.gnu.org/software/grep) and [pcre2grep](https://github.com/PCRE2Project/pcre2) as a native windows application
 
-What is it?
------------
-Grep: print lines matching a pattern
+All patches under the same license as sources of [Gnu Grep](https://www.gnu.org/software/grep): [GPLv3](https://www.gnu.org/licenses/gpl-3.0.html) or later
 
-Description
------------
-Grep searches one or more input files for lines containing a match to a specified pattern. By default, grep prints the matching lines.
-	 
-Homepage
---------
-http://www.gnu.org/software/grep/grep.html
-Sources: http://ftp.gnu.org/gnu/grep/grep-2.5.4.tar.gz
-	 
-System
-------
-- Win32, i.e. MS-Windows 95 / 98 / ME / NT / 2000 / XP / 2003 / Vista / 2008 with msvcrt.dll
-- if msvcrt.dll is not in your Windows/System folder, get it from
-  Microsoft <http://support.microsoft.com/kb/259403>
-  or by installing Internet Explorer 4.0 or higher
-  <http://www.microsoft.com/windows/ie> 
-- libintl-2 <http://gnuwin32.sourceforge.net/packages/libintl.htm> 
-- libiconv-2 <http://gnuwin32.sourceforge.net/packages/libiconv.htm> 
-- regex <http://gnuwin32.sourceforge.net/packages/regex.htm> 
-- pcre <http://gnuwin32.sourceforge.net/packages/pcre.htm> 
+Author of the patches: Michael M. Builov (mbuilov@yandex.ru)
 
-Notes
------
-- Bugs and questions on this MS-Windows port: gnuwin32@users.sourceforge.net
+## Known bugs of this build of Gnu grep
+- search in sub-directories is not working (grep -r produces "warning: xxx: recursive directory loop")
 
-Package Availability
---------------------
-- in: http://gnuwin32.sourceforge.net
-Installation
-------------
+## Changes since windows build of Gnu grep-3.3
+- fixed support for colorizing output of grep in Windows console (enabled via '--color' option; tip: use "color" command to reset console colors)
 
-Sources
--------
-- grep-2.5.4-src.zip
+## Changes since windows build of Gnu grep-3.7
+- now support for Perl regular expressions is statically complied in the grep executable
 
-Compilation
------------
-The package has been compiled with GNU auto-tools, GNU make, and Mingw
-(GCC for MS-Windows). Any differences from the original sources are given
-in grep-2.5.4-GnuWin32.diffs in grep-2.5.4-src.zip. Libraries needed
-for compilation can be found at the lines starting with 'LIBS = ' in the
-Makefiles. Usually, these are standard libraries provided with Mingw, or
-libraries from the package itself; 'gw32c' refers to the libgw32c package,
-which provides MS-Windows substitutes or stubs for functions normally found in
-Unix. For more information, see: http://gnuwin32.sourceforge.net/compile.html
-and http://gnuwin32.sourceforge.net/packages/libgw32c.htm.
+## Pre-built executables:
+- [`grep-3.8-x64.exe`](/grep-3.8-x64.exe) - grep 3.8 built for Windows10 x64
+- [`grep-3.8-x86.exe`](/grep-3.8-x86.exe) - grep 3.8 built for WindowsXP x86
+- [`pcre2grep-10.40-x64.exe`](/pcre2grep-10.40-x64.exe) - pcre2grep 10.40 built for Windows10 x64
+- [`pcre2grep-10.40-x86.exe`](/pcre2grep-10.40-x86.exe) - pcre2grep 10.40 built for WindowsXP x86
+
+## Instructions how to create build patch
+- [`grep-3.8-build-patch-howto.txt`](/grep-3.8-build-patch-howto.txt)
+
+## Instructions how to apply build patch to compile grep using native tools only
+- [`grep-3.8-build.txt`](/grep-3.8-build.txt)
+
+## Prepared build patches
+For x64/Windows10/VS22:
+- [`grep-3.8-build-VS22-x64.patch`](/grep-3.8-build-VS22-x64.patch)
+
+For x86/WindowsXP/VS22:
+- [`grep-3.8-build-VS22-x86.patch`](/grep-3.8-build-VS22-x86.patch)
