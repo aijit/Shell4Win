@@ -17,5 +17,5 @@ fd()
         cd $dest
         dumpdir . > $cwd
     fi
-    cat $cwd | grep --color -n ".*"
+    cat $cwd | awk '{printf("%-2d %s\n", NR, $0)}'
 }
