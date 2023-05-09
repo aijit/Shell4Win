@@ -1,6 +1,8 @@
-## Shell4Win
+## [Shell4Win](https://github.com/wordworld/Shell4Win)
 
 A collection of some usefull GNU/Linux shell tools for Microsoft Windows.
+Besieds a windows porting version of gnu/bash,
+[WSH](https://github.com/wordworld/Shell4Win#WSH).
 
 
 ### 配置说明
@@ -43,6 +45,8 @@ A collection of some usefull GNU/Linux shell tools for Microsoft Windows.
 [Solarized](https://ethanschoonover.com/solarized/)
 [dircolors](https://github.com/seebi/dircolors-solarized)
 | [Monokai Pro for vscode](https://monokai.pro/)
+
+### [WSH](https://github.com/wordworld/wsh)
 
 ### 命令列表
 
