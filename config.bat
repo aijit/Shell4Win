@@ -41,7 +41,6 @@ echo PATH(after)=!usrPath!
 echo.
 
 :: 4. Add user env variable
-wmic ENVIRONMENT create name="GREP_OPTIONS", username="%usrName%", VariableValue="--color=always" > nul 2>&1 || echo GREP_OPTIONS already set.
 wmic ENVIRONMENT create name="LS_OPTIONS", username="%usrName%", VariableValue="-bhC --color=auto"> nul 2>&1 || echo LS_OPTIONS already set.
 
 :: Restart explorer to make it work
