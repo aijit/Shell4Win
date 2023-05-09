@@ -1,0 +1,1 @@
+@bat --paging=never %*

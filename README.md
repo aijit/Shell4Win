@@ -90,6 +90,7 @@ A collection of some usefull GNU/Linux shell tools for Microsoft Windows.
 
 **Text utilities**
 : cat
+= [ct](https://github.com/sharkdp/bat/releases/tag/v0.23.0)
 | cksum
 | comm
 | csplit
