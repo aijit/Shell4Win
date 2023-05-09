@@ -1,0 +1,1 @@
+@lsd %* --icon=never 2>nul

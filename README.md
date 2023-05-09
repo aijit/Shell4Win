@@ -72,7 +72,7 @@ A collection of some usefull GNU/Linux shell tools for Microsoft Windows.
 | cp
 | dd
 | df
-| dir
+| [dir](https://github.com/lsd-rs/lsd)
 | du
 | install
 | ln
