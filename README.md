@@ -53,12 +53,14 @@ Besieds a windows porting version of gnu/bash,
 **General**
 : [ls](https://u-tools.com/msls)
 | dircolors
+| [dir](https://github.com/lsd-rs/lsd)
 | [grep](https://github.com/mbuilov/grep-windows)
 | [sed](https://github.com/mbuilov/sed-windows)
 | [awk](https://github.com/mbuilov/gawk-windows)
 | [file](https://gnuwin32.sourceforge.net/packages/file.htm)
 | [mandoc](https://embedeo.org/ws/doc/man_windows/)
 | [unrar](https://www.rarlab.com/rar_add.htm)
+| [make](https://gnuwin32.sourceforge.net/packages/make.htm)
 
 
 [GNU/findutils](https://gnuwin32.sourceforge.net/packages/findutils.htm)
@@ -76,7 +78,6 @@ Besieds a windows porting version of gnu/bash,
 | cp
 | dd
 | df
-| [dir](https://github.com/lsd-rs/lsd)
 | du
 | install
 | ln
@@ -180,7 +181,6 @@ Besieds a windows porting version of gnu/bash,
 | less
 | logname
 | m4
-| make
 | mvdir
 | paste
 | recode
