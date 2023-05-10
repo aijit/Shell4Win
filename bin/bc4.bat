@@ -1,0 +1,1 @@
+@"%BEYOND_COMPARE_4%\bcompare" %*
