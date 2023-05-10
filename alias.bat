@@ -5,4 +5,3 @@
 @doskey alias=doskey /macros
 @doskey find=%SHELL4WIN%findutils\find $*
 @doskey date=%SHELL4WIN%coreutils\date $*
-@doskey grep=grep -s --color=auto $*
