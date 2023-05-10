@@ -60,6 +60,8 @@ Besieds a windows porting version of gnu/bash,
 | [file](https://gnuwin32.sourceforge.net/packages/file.htm)
 | [mandoc](https://embedeo.org/ws/doc/man_windows/)
 | [unrar](https://www.rarlab.com/rar_add.htm)
+| [zip](https://gnuwin32.sourceforge.net/packages/zip.htm)
+| [uzip](https://gnuwin32.sourceforge.net/packages/unzip.htm)
 | [make](https://gnuwin32.sourceforge.net/packages/make.htm)
 
 
