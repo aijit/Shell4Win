@@ -1,1 +1,1 @@
-@"%BEYOND_COMPARE_4%\bcompare" %*
+@start cmd /c "%BEYOND_COMPARE_4%\bcompare" %*
